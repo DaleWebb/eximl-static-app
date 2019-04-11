@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  align-items: flex-end;
+  flex: 0 0 75px;
+  width: 100%;
+  padding: 20px;
+  border-top: 1px solid $gray;
+  color: $gray;
+
+  img {
+    height: 20px;
+    margin-left: 5px;
+  }
+}
