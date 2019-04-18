@@ -1,0 +1,77 @@
+.mini-table {
+  width: calc(100% + 15px);
+  margin: -7.5px;
+  border-collapse: separate;
+  border-spacing: 7.5px;
+
+  tr {
+    height: 26px;
+  }
+
+  &__stat {
+    text-align: center;
+
+    &--positive {
+      color: $green;
+    }
+
+    &--negative {
+      color: $red;
+    }
+
+    &--neutral {
+      color: $blue;
+    }
+
+    &--align-right {
+      text-align: right;
+    }
+  }
+
+  .button {
+    display: block;
+  }
+}
+
+.table {
+  width: calc(100% + 15px);
+  margin: -7.5px;
+  border-collapse: separate;
+  border-spacing: 7.5px;
+
+  th {
+    font-weight: bold;
+  }
+
+  tbody tr {
+    height: 35px;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  &__stat {
+    text-align: center;
+
+    &--positive {
+      color: $green;
+    }
+
+    &--negative {
+      color: $red;
+    }
+
+    &--neutral {
+      color: $blue;
+    }
+
+    &--align-right {
+      text-align: right;
+    }
+  }
+
+  .button {
+    display: block;
+  }
+}

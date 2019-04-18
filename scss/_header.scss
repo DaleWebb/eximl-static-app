@@ -30,7 +30,9 @@
     padding: 15px 30px;
     margin: 0 5px;
     background-color: $sidebar-background-colour;
-    color: #FFF;
+    color: $white;
+    text-decoration: none;
+    user-select: none;
     cursor: pointer;
     transition: background-color .2s;
 
@@ -58,11 +60,11 @@
     transition: color .2s;
 
     &__active, &:hover {
-      color: #000;
+      color: $black;
     }
 
     &:active {
-      color: #000;
+      color: $black;
     }
 
     &__icon {
@@ -89,8 +91,8 @@
       font-size: 12px;
       padding-top: 1px;
       border-radius: 100%;
-      background: #F00;
-      color: #FFF;
+      background: $red;
+      color: $white;
     }
   }
 }

@@ -1,0 +1,14 @@
+.indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+
+  &--buyer {
+    background-color: #00EBFF;
+  }
+
+  &--seller {
+    background-color: #F500FF;
+  }
+}

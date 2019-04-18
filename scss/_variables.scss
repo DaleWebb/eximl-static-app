@@ -1,8 +1,44 @@
+/* Base Colours
+================================== */
+$black: #000;
 $gray: #707070;
+$white: #FFF;
+$blue: #5997c3;
+$light-blue: #d9e8f2;
+$red: #F00;
+$green: #06B220;
 
-$header-background-colour: #d9e8f2;
+/* Text
+================================== */
+$text-colour: $gray;
 
-$sidebar-background-colour: #5997c3;
+/* Menus
+================================== */
+$header-background-colour: $light-blue;
+$sidebar-background-colour: $blue;
+$sidebar-link-background-colour-active: lighten($sidebar-background-colour, 20%);
+$sidebar-link-background-colour-clicked: lighten($sidebar-background-colour, 10%);
 
-$sidebar-link-background-colour-active: #8ab6d5;
-$sidebar-link-background-colour-clicked: #7ca5c1;
+/* Buttons
+================================== */
+$button-background-colour: $blue;
+$button-background-colour-active: lighten($button-background-colour, 20%);
+$button-background-colour-clicked: lighten($button-background-colour, 10%);
+
+$button-background-colour-negative: #D52222;
+$button-background-colour-negative-active: lighten($button-background-colour-negative, 20%);
+$button-background-colour-negative-clicked: lighten($button-background-colour-negative, 10%);
+
+$button-background-colour-gray: $gray;
+$button-background-colour-gray-active: lighten($button-background-colour-gray, 20%);
+$button-background-colour-gray-clicked: lighten($button-background-colour-gray, 10%);
+
+$button-background-colour-positive: #55CE29;
+$button-background-colour-positive-active: lighten($button-background-colour-positive, 20%);
+$button-background-colour-positive-clicked: lighten($button-background-colour-positive, 10%);
+
+$button-text-colour: $white;
+
+/* Tabs
+================================== */
+$pill-text-colour: $blue;

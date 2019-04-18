@@ -1,5 +1,5 @@
 .sidebar {
-  width: 215px;
+  flex: 0 0 215px;
   padding: 35px 10px;
   background-color: $sidebar-background-colour;
 
@@ -12,6 +12,8 @@
     background-color: transparent;
     color: #FFF;
     cursor: pointer;
+    text-decoration: none;
+    user-select: none;
     transition: background-color .2s;
 
     &:last-child {

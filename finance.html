@@ -1,0 +1,391 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/eximl.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    </head>
+    <body>
+        <header class="header">
+          <div class="header__logo">
+            <img src="img/365.png" />
+          </div>
+          <div class="quick-links">
+            <a class="quick-links__button">Invite</a>
+            <a class="quick-links__button">Reports</a>
+            <a class="quick-links__button">Insurance</a>
+            <a class="quick-links__button">Finance</a>
+            <a class="quick-links__button">Membership</a>
+            <a class="quick-links__button">Tokens</a>
+          </div>
+          <div class="user-actions">
+            <div class="user-actions__item">
+              <i class="fas fa-bell fa-2x mr-10"></i>
+              <span class="notification">5</span>
+              <span>Notifications</span>
+            </div>
+            <div class="user-actions__item">
+              <i class="fas fa-user fa-2x mr-10"></i>
+              <span>Sarah Potter</span>
+            </div>
+            <div class="user-actions__item">
+              <i class="fas fa-sign-out-alt fa-2x mr-10"></i>
+              <span>Logout</span>
+            </div>
+          </div>
+        </header>
+        <div class="main">
+          <div class="sidebar">
+            <a class="sidebar__link" href="/">Dashboard</a>
+            <a class="sidebar__link" href="/members.html">Members</a>
+            <a class="sidebar__link" href="/invitations.html">Invitations</a>
+            <a class="sidebar__link sidebar__link--active" href="/trades.html">Trading</a>
+            <a class="sidebar__link" href="/documents.html">Documents</a>
+            <a class="sidebar__link" href="/purchases.html">Purchases</a>
+            <a class="sidebar__link" href="/settings.html">Settings</a>
+          </div>
+          <div class="page">
+            <div class="page__header">
+              <h1>Trading</h1>
+              <div class="buttons buttons--horizontal">
+                <a class="button button--large">
+                  <i class="fas fa-plus mr-10"></i>
+                  Start new transaction
+                </a>
+              </div>
+            </div>
+            <div class="row space-between mb-50">
+              <div class="column">
+                <div class="row mb-20">
+                  <div class="tabs">
+                    <a class="pill" href="/trades.html">Trades View</a>
+                    <a class="pill pill--active">Finance View</a>
+                  </div>
+                </div>
+                <div class="row align-center">
+                  <div class="indicator indicator--buyer mr-10"></div>
+                  <p>You are the Buyer</p>
+                </div>
+                <div class="row align-center">
+                  <div class="indicator indicator--seller mr-10"></div>
+                  <p>You are the Seller</p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="row">
+                  <div class="column mr-20">
+                    <div class="input-fields--vertical">
+                      <select class="input-field">
+                        <option selected disabled>Your role</option>
+                        <option>Buyer</option>
+                        <option>Seller</option>
+                      </select>
+                      <select class="input-field">
+                        <option selected disabled>Status</option>
+                        <option>Awaiting Credit decision</option>
+                        <option>Awaiting Finance decision</option>
+                        <option>Awaiting Handshake</option>
+                        <option>Awaiting Insurance decision</option>
+                        <option>Finance Quote received</option>
+                        <option>Insurance Quote received</option>
+                        <option>Invoice Confirmed</option>
+                        <option>Trade Live</option>
+                      </select>
+                      <input type="text" class="input-field" name="" value="" placeholder="Currency">
+                    </div>
+                  </div>
+                  <div class="column mr-20">
+                    <div class="input-fields--vertical">
+                      <input type="text" class="input-field" name="" value="" placeholder="Trade ID">
+                      <input type="text" class="input-field" name="" value="" placeholder="Member name">
+                      <input type="text" class="input-field" name="" value="" placeholder="Invoice No">
+                    </div>
+                  </div>
+                  <div class="column mr-20">
+                    <div class="input-field-group">
+                      <div class="input-field-group__header">Invoice Amount range</div>
+                      <div class="input-field-group__body">
+                        <input type="number" class="input-field" placeholder="from...">
+                        <input type="number" class="input-field" placeholder="to...">
+                      </div>
+                    </div>
+                    <div class="input-field-group">
+                      <div class="input-field-group__header">Date range</div>
+                      <div class="input-field-group__body">
+                        <input type="number" class="input-field" placeholder="from...">
+                        <input type="number" class="input-field" placeholder="to...">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="buttons buttons--vertical">
+                      <a class="button button--medium">Apply</a>
+                      <a class="button button--medium">Reset</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <table class="table mb-20">
+              <thead>
+                <tr>
+                  <th><input type="checkbox" /></th>
+                  <th></th>
+                  <th>Trade ID</th>
+                  <th>Invoice No.</th>
+                  <th>Currency</th>
+                  <th>Invoice Amount</th>
+                  <th>Date Created</th>
+                  <th>Date Invoice Due</th>
+                  <th>Buyer</th>
+                  <th colspan="2">Handshake</th>
+                  <th>Seller</th>
+                  <th colspan="2">Handshake</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th>Data</th>
+                  <th>Invoice</th>
+                  <th></th>
+                  <th>Data</th>
+                  <th>Invoice</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td><div class="indicator indicator--buyer"></div></td>
+                  <td><a>1051</a></td>
+                  <td>FP1234098</td>
+                  <td>GBP</td>
+                  <td>125,000</td>
+                  <td>13 Feb 2019</td>
+                  <td>13 Apr 2019</td>
+                  <td>Fantastic Plastic</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--negative">!</td>
+                  <td>Venus Ltd</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td>
+                    <div class="buttons buttons--horizontal buttons--align-center">
+                      <a class="button button--small button--disabled">Upload Invoice</a>
+                      <a class="button button--small">View Data</a>
+                      <a class="button button--small">View Invoice</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td><div class="indicator indicator--seller"></div></td>
+                  <td><a>1051</a></td>
+                  <td>FP1234098</td>
+                  <td>GBP</td>
+                  <td>125,000</td>
+                  <td>13 Feb 2019</td>
+                  <td>13 Apr 2019</td>
+                  <td>Fantastic Plastic</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--negative">!</td>
+                  <td>Venus Ltd</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--negative">!</td>
+                  <td>
+                    <div class="buttons buttons--horizontal buttons--align-center">
+                      <a class="button button--small">Upload Invoice</a>
+                      <a class="button button--small">View Data</a>
+                      <a class="button button--small">View Invoice</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" checked/></td>
+                  <td><div class="indicator indicator--seller"></div></td>
+                  <td><a>1051</a></td>
+                  <td>FP1234098</td>
+                  <td>GBP</td>
+                  <td>125,000</td>
+                  <td>13 Feb 2019</td>
+                  <td>13 Apr 2019</td>
+                  <td>Fantastic Plastic</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--negative">!</td>
+                  <td>Venus Ltd</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td>
+                    <div class="buttons buttons--horizontal buttons--align-center">
+                      <a class="button button--small button--disabled">Upload Invoice</a>
+                      <a class="button button--small">View Data</a>
+                      <a class="button button--small">View Invoice</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" checked/></td>
+                  <td><div class="indicator indicator--seller"></div></td>
+                  <td><a>1051</a></td>
+                  <td>FP1234098</td>
+                  <td>GBP</td>
+                  <td>125,000</td>
+                  <td>13 Feb 2019</td>
+                  <td>13 Apr 2019</td>
+                  <td>Fantastic Plastic</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--negative">!</td>
+                  <td>Venus Ltd</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--negative">!</td>
+                  <td>
+                    <div class="buttons buttons--horizontal buttons--align-center">
+                      <a class="button button--small">Upload Invoice</a>
+                      <a class="button button--small">View Data</a>
+                      <a class="button button--small">View Invoice</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td><div class="indicator indicator--buyer"></div></td>
+                  <td><a>1051</a></td>
+                  <td>FP1234098</td>
+                  <td>GBP</td>
+                  <td>125,000</td>
+                  <td>13 Feb 2019</td>
+                  <td>13 Apr 2019</td>
+                  <td>Fantastic Plastic</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--negative">!</td>
+                  <td>Venus Ltd</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td>
+                    <div class="buttons buttons--horizontal buttons--align-center">
+                      <a class="button button--small">Upload Invoice</a>
+                      <a class="button button--small">View Data</a>
+                      <a class="button button--small">View Invoice</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" checked/></td>
+                  <td><div class="indicator indicator--buyer"></div></td>
+                  <td><a>1051</a></td>
+                  <td>FP1234098</td>
+                  <td>GBP</td>
+                  <td>125,000</td>
+                  <td>13 Feb 2019</td>
+                  <td>13 Apr 2019</td>
+                  <td>Fantastic Plastic</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--negative">!</td>
+                  <td>Venus Ltd</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td>
+                    <div class="buttons buttons--horizontal buttons--align-center">
+                      <a class="button button--small">Upload Invoice</a>
+                      <a class="button button--small">View Data</a>
+                      <a class="button button--small">View Invoice</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" /></td>
+                  <td><div class="indicator indicator--seller"></div></td>
+                  <td><a>1051</a></td>
+                  <td>FP1234098</td>
+                  <td>GBP</td>
+                  <td>125,000</td>
+                  <td>13 Feb 2019</td>
+                  <td>13 Apr 2019</td>
+                  <td>Fantastic Plastic</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--negative">!</td>
+                  <td>Venus Ltd</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td>
+                    <div class="buttons buttons--horizontal buttons--align-center">
+                      <a class="button button--small">Upload Invoice</a>
+                      <a class="button button--small">View Data</a>
+                      <a class="button button--small">View Invoice</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" checked/></td>
+                  <td><div class="indicator indicator--seller"></div></td>
+                  <td><a>1051</a></td>
+                  <td>FP1234098</td>
+                  <td>GBP</td>
+                  <td>125,000</td>
+                  <td>13 Feb 2019</td>
+                  <td>13 Apr 2019</td>
+                  <td>Fantastic Plastic</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--negative">!</td>
+                  <td>Venus Ltd</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td>
+                    <div class="buttons buttons--horizontal buttons--align-center">
+                      <a class="button button--small">Upload Invoice</a>
+                      <a class="button button--small">View Data</a>
+                      <a class="button button--small">View Invoice</a>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" checked/></td>
+                  <td><div class="indicator indicator--seller"></div></td>
+                  <td><a>1051</a></td>
+                  <td>FP1234098</td>
+                  <td>GBP</td>
+                  <td>125,000</td>
+                  <td>13 Feb 2019</td>
+                  <td>13 Apr 2019</td>
+                  <td>Fantastic Plastic</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--negative">!</td>
+                  <td>Venus Ltd</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td class="table__stat table__stat--positive">✓</td>
+                  <td>
+                    <div class="buttons buttons--horizontal buttons--align-center">
+                      <a class="button button--small">Upload Invoice</a>
+                      <a class="button button--small">View Data</a>
+                      <a class="button button--small">View Invoice</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="column">
+              <div class="mb-20">5 selected</div>
+              <div class="buttons buttons--horizontal">
+                <a class="button button--medium">Finance Selected</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <span>powered by</span>
+          <img src="img/logo.png" />
+        </footer>
+    </body>
+</html>
