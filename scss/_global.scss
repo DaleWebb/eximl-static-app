@@ -11,9 +11,10 @@ html {
 }
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100%;
   margin: 0;
 }
 

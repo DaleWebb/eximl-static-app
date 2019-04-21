@@ -1,5 +1,8 @@
 .sidebar {
-  flex: 0 0 215px;
+  position: fixed;
+  top: $header-height;
+  width: $sidebar-width;
+  min-height: calc(100% - #{$header-height});
   padding: 35px 10px;
   background-color: $sidebar-background-colour;
 

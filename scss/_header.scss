@@ -1,7 +1,7 @@
 .header {
+  position: fixed;
   display: inline-flex;
   justify-content: space-between;
-  flex: 0 0 95px;
   width: 100%;
   padding: 20px;
   background-color: $header-background-colour;
@@ -10,7 +10,6 @@
     display: flex;
     align-items: center;
     width: 195px;
-    height: 100%;
     border-right: 1px solid $gray;
 
     img {

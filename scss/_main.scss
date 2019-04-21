@@ -1,11 +1,11 @@
-.main {
-  display: flex;
-  flex-grow: 1;
-}
-
 .page {
-  flex: 1;
-  margin: 25px 50px;
+  min-height: calc(100% - #{$header-height + $footer-height});
+  margin-top: $header-height;
+  margin-left: $sidebar-width;
+  padding-top: 25px;
+  padding-bottom: 25px + $footer-height;
+  padding-left: 50px;
+  padding-right: 50px;
 
   &__header {
     display: flex;

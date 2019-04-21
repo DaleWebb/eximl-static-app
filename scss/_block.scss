@@ -18,6 +18,7 @@
     flex-direction: row;
 
     > .block {
+      flex: 1;
       margin-right: 50px;
 
       &:last-child {
@@ -30,7 +31,6 @@
 .block {
   display: flex;
   flex-direction: column;
-  flex: 1;
   min-width: 300px;
   max-width: 400px;
 

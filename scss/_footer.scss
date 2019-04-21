@@ -1,16 +1,24 @@
 .footer {
+  position: absolute;
+  bottom: 0;
   display: flex;
   align-items: flex-end;
-  flex: 0 0 75px;
   width: 100%;
+  height: $footer-height;
   padding: 20px;
   border-top: 1px solid $gray;
   color: $gray;
   background-color: #FFF;
   user-select: none;
+  z-index: 1;
 
   img {
     height: 20px;
     margin-left: 5px;
+  }
+
+  .powered-by {
+    position: relative;
+    bottom: 2px;
   }
 }

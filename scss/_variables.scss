@@ -19,6 +19,10 @@ $sidebar-background-colour: $blue;
 $sidebar-link-background-colour-active: lighten($sidebar-background-colour, 20%);
 $sidebar-link-background-colour-clicked: lighten($sidebar-background-colour, 10%);
 
+$header-height: 102px;
+$sidebar-width: 215px;
+$footer-height: 61px;
+
 /* Buttons
 ================================== */
 $button-background-colour: $blue;
