@@ -1,34 +1,105 @@
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   top: $header-height;
   width: $sidebar-width;
-  min-height: calc(100% - #{$header-height});
-  padding: 35px 10px;
+  min-height: calc(100% - #{$header-height + $footer-height});
+  padding: 10px;
   background-color: $sidebar-background-colour;
 
-  &__link {
-    display: block;
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    padding: 15px;
-    background-color: transparent;
-    color: #FFF;
-    cursor: pointer;
-    text-decoration: none;
-    user-select: none;
-    transition: background-color .2s;
+  &--animated & {
+    transition: width .5s;
+  }
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  &--animated.sidebar--collapsed & {
+    transition-delay: .6s;
+  }
 
-    &--active, &:hover {
-      background-color: $sidebar-link-background-colour-active;
-    }
+  &--animated.sidebar--expanded & {
 
-    &:active {
-      background-color: $sidebar-link-background-colour-clicked;
+    .sidebar-link__text {
+      transition: opacity .5s;
+      transition-delay: .6s;
     }
+  }
+
+  &--collapsed & {
+    width: $sidebar-width-collapsed;
+
+    .sidebar-link__text {
+      opacity: 0;
+    }
+  }
+
+  &--expanded & {
+    width: $sidebar-width;
+
+    .sidebar-link__text {
+      opacity: 1;
+    }
+  }
+
+}
+
+.sidebar-links {
+  margin-top: 25px;
+}
+
+.sidebar-link {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: transparent;
+  color: #FFF;
+  cursor: pointer;
+  text-decoration: none;
+  user-select: none;
+  transition: background-color .2s;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--active, &:hover {
+    background-color: $sidebar-link-background-colour-active;
+  }
+
+  &:active {
+    background-color: $sidebar-link-background-colour-clicked;
+  }
+
+  &__icon {
+
+  }
+
+  &__text {
+    margin-left: 10px;
+    opacity: 1;
+  }
+}
+
+#sidebar-trigger {
+  display: flex;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: transparent;
+  color: #FFF;
+  border: 1px solid $sidebar-link-background-colour-active;
+  cursor: pointer;
+  text-decoration: none;
+  user-select: none;
+  transition: background-color .2s;
+
+  &--active, &:hover {
+    background-color: $sidebar-link-background-colour-active;
+  }
+
+  &:active {
+    background-color: $sidebar-link-background-colour-clicked;
   }
 }

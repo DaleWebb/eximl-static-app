@@ -133,37 +133,100 @@ body {
       color: #FFF; }
 
 .sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
   top: 102px;
   width: 215px;
-  min-height: calc(100% - 102px);
-  padding: 35px 10px;
+  min-height: calc(100% - 163px);
+  padding: 10px;
   background-color: #5997c3; }
-  .sidebar__link {
-    display: block;
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
-    padding: 15px;
-    background-color: transparent;
-    color: #FFF;
-    cursor: pointer;
-    text-decoration: none;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    -webkit-transition: background-color .2s;
-    transition: background-color .2s; }
-    .sidebar__link:last-child {
-      margin-bottom: 0; }
-    .sidebar__link--active, .sidebar__link:hover {
-      background-color: #a4c6de; }
-    .sidebar__link:active {
-      background-color: #7eaed1; }
+  .sidebar--animated .sidebar {
+    -webkit-transition: width .5s;
+    transition: width .5s; }
+  .sidebar--animated.sidebar--collapsed .sidebar {
+    -webkit-transition-delay: .6s;
+            transition-delay: .6s; }
+  .sidebar--animated.sidebar--expanded .sidebar .sidebar-link__text {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    -webkit-transition-delay: .6s;
+            transition-delay: .6s; }
+  .sidebar--collapsed .sidebar {
+    width: 66px; }
+    .sidebar--collapsed .sidebar .sidebar-link__text {
+      opacity: 0; }
+  .sidebar--expanded .sidebar {
+    width: 215px; }
+    .sidebar--expanded .sidebar .sidebar-link__text {
+      opacity: 1; }
+
+.sidebar-links {
+  margin-top: 25px; }
+
+.sidebar-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: transparent;
+  color: #FFF;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s; }
+  .sidebar-link:last-child {
+    margin-bottom: 0; }
+  .sidebar-link--active, .sidebar-link:hover {
+    background-color: #a4c6de; }
+  .sidebar-link:active {
+    background-color: #7eaed1; }
+  .sidebar-link__text {
+    margin-left: 10px;
+    opacity: 1; }
+
+#sidebar-trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: transparent;
+  color: #FFF;
+  border: 1px solid #a4c6de;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s; }
+  #sidebar-trigger--active, #sidebar-trigger:hover {
+    background-color: #a4c6de; }
+  #sidebar-trigger:active {
+    background-color: #7eaed1; }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,11 +255,20 @@ body {
 .page {
   min-height: calc(100% - 163px);
   margin-top: 102px;
-  margin-left: 215px;
   padding-top: 25px;
   padding-bottom: 86px;
   padding-left: 50px;
   padding-right: 50px; }
+  .sidebar--animated .page {
+    -webkit-transition: margin-left .5s;
+    transition: margin-left .5s; }
+  .sidebar--animated.sidebar--collapsed .page {
+    -webkit-transition-delay: .6s;
+            transition-delay: .6s; }
+  .sidebar--collapsed .page {
+    margin-left: 66px; }
+  .sidebar--expanded .page {
+    margin-left: 215px; }
   .page__header {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -1,11 +1,26 @@
 .page {
   min-height: calc(100% - #{$header-height + $footer-height});
   margin-top: $header-height;
-  margin-left: $sidebar-width;
   padding-top: 25px;
   padding-bottom: 25px + $footer-height;
   padding-left: 50px;
   padding-right: 50px;
+
+  .sidebar--animated & {
+    transition: margin-left .5s;
+  }
+
+  .sidebar--animated.sidebar--collapsed & {
+    transition-delay: .6s;
+  }
+
+  .sidebar--collapsed & {
+    margin-left: $sidebar-width-collapsed;
+  }
+
+  .sidebar--expanded & {
+    margin-left: $sidebar-width;
+  }
 
   &__header {
     display: flex;
