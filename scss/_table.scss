@@ -39,16 +39,30 @@
   border-collapse: separate;
   border-spacing: 7.5px;
 
-  th {
-    font-weight: bold;
+  &--horizontal {
+    th {
+      font-weight: bold;
+    }
+
+    tbody tr {
+      height: 35px;
+    }
+
+    td {
+      text-align: center;
+    }
   }
 
-  tbody tr {
-    height: 35px;
-  }
+  &--vertical {
 
-  td {
-    text-align: center;
+    td {
+      vertical-align: top;
+      padding-bottom: 20px;
+
+      &:first-child {
+        padding-right: 40px;
+      }
+    }
   }
 
   &__stat {

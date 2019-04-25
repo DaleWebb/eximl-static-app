@@ -1,6 +1,7 @@
 .buttons {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: flex-end;
 
   &--vertical {
     flex-direction: column;
@@ -51,6 +52,10 @@
 
   .buttons--horizontal & {
     display: inline-block;
+  }
+
+  &:hover {
+    text-decoration: none;
   }
 
   &--active, &:hover {

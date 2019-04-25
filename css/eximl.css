@@ -359,9 +359,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
   .buttons--vertical {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -406,6 +409,8 @@ body {
     width: 100%; }
   .buttons--horizontal .button {
     display: inline-block; }
+  .button:hover {
+    text-decoration: none; }
   .button--active, .button:hover {
     background-color: #a4c6de; }
   .button:active {
@@ -473,12 +478,17 @@ body {
   margin: -7.5px;
   border-collapse: separate;
   border-spacing: 7.5px; }
-  .table th {
+  .table--horizontal th {
     font-weight: bold; }
-  .table tbody tr {
+  .table--horizontal tbody tr {
     height: 35px; }
-  .table td {
+  .table--horizontal td {
     text-align: center; }
+  .table--vertical td {
+    vertical-align: top;
+    padding-bottom: 20px; }
+    .table--vertical td:first-child {
+      padding-right: 40px; }
   .table__stat {
     text-align: center; }
     .table__stat--positive {
@@ -620,26 +630,40 @@ a {
   .indicator--seller {
     background-color: #F500FF; }
 
-.input-fields--vertical > .input-field {
-  margin-bottom: 15px; }
-  .input-fields--vertical > .input-field:last-child {
-    margin-bottom: 0; }
-
-.input-fields--horizontal > .input-field {
-  margin-right: 15px; }
-  .input-fields--horizontal > .input-field:last-child {
-    margin-right: 0; }
+.input-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .input-fields--vertical {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .input-fields--vertical > * {
+      margin-bottom: 15px; }
+      .input-fields--vertical > *:last-child {
+        margin-bottom: 0; }
+  .input-fields--horizontal {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .input-fields--horizontal > * {
+      margin-right: 15px; }
+      .input-fields--horizontal > *:last-child {
+        margin-right: 0; }
 
 .input-field {
   display: block;
   width: 100%;
-  height: 35px;
   border-radius: 5px;
   border: 1px solid #707070;
   padding: 5px 15px;
   font-family: 'Eurostile';
   font-size: 15px;
   background-color: #FFF; }
+  .input-field:not(textarea) {
+    height: 35px; }
 
 .input-field-group {
   display: block;
@@ -664,6 +688,13 @@ a {
       margin-bottom: 0; }
       .input-field-group__body > *:last-child {
         margin-right: 0; }
+
+.required:after {
+  color: #F00;
+  content: '*'; }
+
+.input-field-help-text {
+  margin-top: 10px; }
 
 .pagination {
   display: -webkit-box;
