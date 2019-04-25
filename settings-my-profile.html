@@ -59,7 +59,7 @@
               </span>
               <span class="sidebar-link__text">Invitations</span>
             </a>
-            <a class="sidebar-link sidebar-link--active" href="trades.html">
+            <a class="sidebar-link" href="trades.html">
               <span class="sidebar-link__icon">
                 <i class="fa fa-handshake"></i>
               </span>
@@ -77,7 +77,7 @@
               </span>
               <span class="sidebar-link__text">Purchases</span>
             </a>
-            <a class="sidebar-link" href="settings-my-profile.html">
+            <a class="sidebar-link sidebar-link--active" href="settings-my-profile.html">
               <span class="sidebar-link__icon">
                 <i class="fa fa-cog"></i>
               </span>
@@ -94,84 +94,53 @@
               Dashboard
             </div>
             <div class="breadcrumb">
-              Trading
+              Settings
             </div>
             <div class="breadcrumb">
-              New Transaction
+              My Profile
             </div>
           </div>
           <div class="page__header">
-            <h1>New Transaction</h1>
+            <div>
+              <h1>Settings</h1>
+              <div class="tabs">
+                <a class="pill pill--active">My Profile</a>
+                <a class="pill" href="settings-company-profile.html">Company Profile</a>
+              </div>
+            </div>
+            <div class="buttons buttons--horizontal">
+              <a class="button button--large">Change Password</a>
+              <a class="button button--large">Edit User</a>
+              <a class="button button--large button--negative">Delete User</a>
+            </div>
           </div>
           <div class="row">
-            <div class="column">
-              <table class="table table--vertical">
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="required">Are you the buyer or the seller?</div>
-                    </td>
-                    <td>
-                      <div class="input-fields input-fields--horizontal">
-                        <label><input type="radio" name="role" value="buyer" /> Buyer</label>
-                        <label><input type="radio" name="role" value="seller" /> Seller</label>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="required">Who is the buyer?</div>
-                      <div class="input-field-help-text">(Start typing the buyer’s company name to find them).</div>
-                    </td>
-                    <td>
-                      <input type="text" class="input-field" />
-                      <div class="input-field-help-text">
-                        If the buyer is not yet a member of the platform, <a>send them an invitation to join.</a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="required">Describe goods/services</div>
-                    </td>
-                    <td>
-                      <textarea class="input-field" rows="10"></textarea>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="required">What is the total invoice amount?</div>
-                    </td>
-                    <td>
-                      <div class="input-fields input-fields--horizontal">
-                        <select class="input-field">
-                          <option selected>GBP</option>
-                        </select>
-                        <input type="number" class="input-field" min="0" />
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="required">What is the credit period required (in days)</div>
-                    </td>
-                    <td>
-                      <input type="number" class="input-field" min="1" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td>
-                      <div class="buttons buttons--horizontal">
-                        <a class="button button--medium button--gray">Cancel</a>
-                        <a class="button button--medium button--blue">Submit</a>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="column"></div>
+            <table class="mini-table">
+              <tbody>
+                <tr>
+                  <td>
+                    <h2>Sarah Potter</h2>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Date of Birth:</td>
+                  <td>05/04/1965</td>
+                </tr>
+                <tr>
+                  <td>Job title:</td>
+                  <td>Director</td>
+                </tr>
+                <tr>
+                  <td>Email address:</td>
+                  <td>sarah@fantasticplastic.com</td>
+                </tr>
+                <tr>
+                  <td>Mobile number</td>
+                  <td>07864912354</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
         <footer class="footer">
