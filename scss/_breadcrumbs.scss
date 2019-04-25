@@ -1,0 +1,18 @@
+.breadcrumbs {
+  display: flex;
+}
+
+.breadcrumb {
+  font-size: 13px;
+
+  &:after {
+    display: inline-flex;
+    content: '>';
+    margin-left: 5px;
+    margin-right: 7px;
+  }
+
+  &:last-child:after {
+    display: none;
+  }
+}

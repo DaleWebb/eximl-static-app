@@ -1,8 +1,9 @@
 .tabs {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
 
   &--horizontal {
+    width: 100%;
     border-bottom: 1px solid $gray;
     margin-bottom: 20px;
 
@@ -70,5 +71,6 @@
   &:hover {
     color: $white;
     background-color: $pill-text-colour;
+    text-decoration: none;
   }
 }

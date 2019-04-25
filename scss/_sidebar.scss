@@ -15,6 +15,10 @@
 
   &--animated.sidebar--collapsed & {
     transition-delay: .6s;
+
+    .sidebar-link__text {
+      transition: opacity .5s;
+    }
   }
 
   &--animated.sidebar--expanded & {
@@ -66,14 +70,11 @@
 
   &--active, &:hover {
     background-color: $sidebar-link-background-colour-active;
+    text-decoration: none;
   }
 
   &:active {
     background-color: $sidebar-link-background-colour-clicked;
-  }
-
-  &__icon {
-
   }
 
   &__text {
@@ -97,6 +98,7 @@
 
   &--active, &:hover {
     background-color: $sidebar-link-background-colour-active;
+    text-decoration: none;
   }
 
   &:active {

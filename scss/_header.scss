@@ -37,6 +37,7 @@
 
     &--active, &:hover {
       background-color: $sidebar-link-background-colour-active;
+      text-decoration: none;
     }
 
     &:active {
@@ -60,6 +61,7 @@
 
     &__active, &:hover {
       color: $black;
+      text-decoration: none;
     }
 
     &:active {

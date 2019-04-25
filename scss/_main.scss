@@ -28,6 +28,16 @@
     justify-content: space-between;
     margin-bottom: 25px;
 
+    > * {
+      display: flex;
+      align-items: center;
+    }
+
+    h1 {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
     & .button {
       border-radius: 5px;
       min-width: 175px;
