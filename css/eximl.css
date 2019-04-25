@@ -706,6 +706,7 @@ a {
           flex-direction: row; }
   .pagination__number {
     padding: 15px;
+    color: #707070;
     opacity: .5;
     -webkit-transition: opacity .2s;
     transition: opacity .2s; }
