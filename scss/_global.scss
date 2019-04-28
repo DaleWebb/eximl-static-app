@@ -1,12 +1,8 @@
-@font-face {
-  font-family: 'Eurostile';
-  font-style: normal;
-  src: url('../fonts/eurostile.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
 html {
   height: 100%;
-  font-family: 'Eurostile';
+  font-family: 'Roboto';
   color: $text-colour;
 }
 
