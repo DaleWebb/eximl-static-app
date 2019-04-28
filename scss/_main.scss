@@ -1,10 +1,18 @@
 .page {
   min-height: calc(100% - #{$header-height + $footer-height});
-  margin-top: $header-height;
   padding-top: 25px;
   padding-bottom: 25px + $footer-height;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: $header-logo-width + 20px;
+  padding-right: $header-logo-width + 20px;
+
+  .header ~ & {
+    margin-top: $header-height;
+  }
+
+  .sidebar + & {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 
   .sidebar--animated & {
     transition: margin-left .5s;
@@ -14,11 +22,11 @@
     transition-delay: .6s;
   }
 
-  .sidebar--collapsed & {
+  .sidebar--collapsed .sidebar + & {
     margin-left: $sidebar-width-collapsed;
   }
 
-  .sidebar--expanded & {
+  .sidebar--expanded .sidebar + & {
     margin-left: $sidebar-width;
   }
 

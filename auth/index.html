@@ -1,0 +1,186 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../css/eximl.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="../js/app.js"></script>
+    </head>
+    <body>
+        <header class="header">
+          <div class="header__logo">
+            <img src="../img/365.png" />
+          </div>
+          <div class="header__title">
+            <h1>Registration</h1>
+          </div>
+        </header>
+        <div class="page">
+          <div class="row">
+            <div class="column--fill mr-100">
+              <h2>Company Details</h2>
+              <table class="table table--vertical">
+                <tbody>
+                  <tr>
+                    <td colspan="2">
+                      <div class="input-fields input-fields--horizontal">
+                        <select class="input-field">
+                          <option selected>United Kingdom</option>
+                        </select>
+                        <input type="text" class="input-field" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      Verify:
+                    </td>
+                    <td>
+                      <input type="text" class="input-field" />
+                      <div class="buttons">
+                        <a id="lookup-button" class="button button--medium">Lookup</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div id="company-details" style="display: none;">
+                <h4>Please check that company details are correct:</h4>
+                <table class="table table--vertical">
+                  <tbody>
+                    <tr>
+                      <td>Name</td>
+                      <td>
+                        <input type="text" class="input-field" value="Fantastic Plastic Limited" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Type
+                      </td>
+                      <td>
+                        <select class="input-field">
+                          <option selected>Ltd</option>
+                        </select>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Address</td>
+                      <td>
+                        <textarea class="input-field" cols="120">1 Silicon Road
+London W1 1XD
+GB
+                      </textarea>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Are your company details correct?</td>
+                      <td>
+                        <div class="input-fields input-fields--horizontal">
+                          <label><input type="radio" name="correct" value="yes" checked>Yes</label>
+                          <label><input type="radio" name="correct" value="no">No</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="column--fill">
+              <h2>Your (User) Details</h2>
+              <table class="table table--vertical">
+                <tbody>
+                  <tr>
+                    <td class="required">First Name</td>
+                    <td>
+                      <input type="text" class="input-field" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="required">Last Name</td>
+                    <td>
+                      <input type="text" class="input-field" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="required">Date of Birth</td>
+                    <td>
+                      <input type="date" class="input-field" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Contact Telephone Number</td>
+                    <td>
+                      <input type="tel" class="input-field" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="required">Address</td>
+                    <td>
+                      <div class="input-fields--vertical">
+                        <input type="text" class="input-field" />
+                        <input type="text" class="input-field" />
+                        <input type="text" class="input-field" />
+                        <input type="text" class="input-field" />
+                        <select class="input-field">
+                          <option selected>United Kingdom</option>
+                        </select>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3>Login Details</h3>
+              <table class="table table--vertical">
+                <tbody>
+                  <tr>
+                    <td class="required">Email address (your username)</td>
+                    <td>
+                      <input type="email" class="input-field" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="required">Confirm email address</td>
+                    <td>
+                      <input type="email" class="input-field" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="required">Password</td>
+                    <td>
+                      <input type="password" class="input-field" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="required">Confirm Password</td>
+                    <td>
+                      <input type="password" class="input-field" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <label>
+                        Please tick to confirm acceptance of <a>Terms and Conditions</a>
+                        <input type="checkbox" />
+                      </label>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <div class="buttons buttons--horizontal">
+                        <a class="button button--gray button--medium" href="login.html">Cancel</a>
+                        <a class="button button--medium" href="login.html">Register Company</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>

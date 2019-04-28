@@ -1,0 +1,252 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../css/eximl.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="../js/app.js"></script>
+    </head>
+    <body>
+        <header class="header">
+          <div class="header__logo">
+            <img src="../img/365.png" />
+          </div>
+          <div class="quick-links">
+            <a class="quick-links__button">Invite</a>
+            <a class="quick-links__button">Reports</a>
+            <a class="quick-links__button">Insurance</a>
+            <a class="quick-links__button">Finance</a>
+            <a class="quick-links__button">Membership</a>
+            <a class="quick-links__button">Tokens</a>
+          </div>
+          <div class="user-actions">
+            <div class="user-actions__item">
+              <i class="fas fa-bell fa-2x mr-10"></i>
+              <span class="notification">5</span>
+              <span>Notifications</span>
+            </div>
+            <div class="user-actions__item">
+              <i class="fas fa-user fa-2x mr-10"></i>
+              <span>Sarah Potter</span>
+            </div>
+            <a class="user-actions__item" href="../auth/login.html">
+              <i class="fas fa-sign-out-alt fa-2x mr-10"></i>
+              <span>Logout</span>
+            </a>
+          </div>
+        </header>
+        <div class="sidebar">
+          <div class="sidebar-links">
+            <a class="sidebar-link" href="index.html">
+              <span class="sidebar-link__icon">
+                <i class="fa fa-tachometer-alt"></i>
+              </span>
+              <span class="sidebar-link__text">Dashboard</span>
+            </a>
+            <a class="sidebar-link" href="members.html">
+              <span class="sidebar-link__icon">
+                <i class="fa fa-users"></i>
+              </span>
+              <span class="sidebar-link__text">Members</span>
+            </a>
+            <a class="sidebar-link" href="invitations.html">
+              <span class="sidebar-link__icon">
+                <i class="fa fa-share-alt"></i>
+              </span>
+              <span class="sidebar-link__text">Invitations</span>
+            </a>
+            <a class="sidebar-link sidebar-link--active" href="trades.html">
+              <span class="sidebar-link__icon">
+                <i class="fa fa-handshake"></i>
+              </span>
+              <span class="sidebar-link__text">Trading</span>
+            </a>
+            <a class="sidebar-link" href="documents.html">
+              <span class="sidebar-link__icon">
+                <i class="fa fa-folder-open"></i>
+              </span>
+              <span class="sidebar-link__text">Documents</span>
+            </a>
+            <a class="sidebar-link" href="purchases.html">
+              <span class="sidebar-link__icon">
+                <i class="fa fa-wallet"></i>
+              </span>
+              <span class="sidebar-link__text">Purchases</span>
+            </a>
+            <a class="sidebar-link" href="settings-my-profile.html">
+              <span class="sidebar-link__icon">
+                <i class="fa fa-cog"></i>
+              </span>
+              <span class="sidebar-link__text">Settings</span>
+            </a>
+          </div>
+          <a id="sidebar-trigger">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="page">
+          <div class="page__header">
+            <h1>Trade Detail</h1>
+            <div class="buttons buttons--horizontal">
+              <a class="button button--large">Accept Finance</a>
+              <a class="button button--large">Add Document</a>
+              <a class="button button--large button--negative">Withdraw</a>
+            </div>
+          </div>
+          <div class="tabs tabs--horizontal">
+            <div class="tab tab--active">
+              <div class="tab__inner">Overview</div>
+            </div>
+            <div class="tab">
+              <div class="tab__inner">Credit Requests</div>
+            </div>
+            <div class="tab">
+              <div class="tab__inner">Trade Documents</div>
+            </div>
+            <div class="tab">
+              <div class="tab__inner">History</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="blocks blocks--vertical mr-50">
+              <div class="block">
+                <div class="block__header">
+                  <h2>status</h2>
+                </div>
+                <div class="block__body">
+                  <table class="mini-table">
+                    <tbody>
+                      <tr>
+                        <td>Trade ID</td>
+                        <td class="mini-table__stat--align-right bold">1051</td>
+                      </tr>
+                      <tr>
+                        <td>Status</td>
+                        <td class="mini-table__stat--align-right bold">Awaiting Credit Decision</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="block">
+                <div class="block__header">
+                  <h2>seller</h2>
+                </div>
+                <div class="block__body">
+                  <table class="mini-table">
+                    <tbody>
+                      <tr>
+                        <td>Company Name</td>
+                        <td class="mini-table__stat--align-right bold">Venus Ltd</td>
+                      </tr>
+                      <tr>
+                        <td>Country</td>
+                        <td class="mini-table__stat--align-right bold">United Kingdom</td>
+                      </tr>
+                      <tr>
+                        <td>User</td>
+                        <td class="mini-table__stat--align-right bold">Freddy Venus</td>
+                      </tr>
+                      <tr>
+                        <td>Handshake</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="block">
+                <div class="block__header">
+                  <h2>buyer</h2>
+                </div>
+                <div class="block__body">
+                  <table class="mini-table">
+                    <tbody>
+                      <tr>
+                        <td>Company Name</td>
+                        <td class="mini-table__stat--align-right bold">Fantastic Plastic</td>
+                      </tr>
+                      <tr>
+                        <td>Country</td>
+                        <td class="mini-table__stat--align-right bold">United Kingdom</td>
+                      </tr>
+                      <tr>
+                        <td>User</td>
+                        <td class="mini-table__stat--align-right bold">Sarah Potter</td>
+                      </tr>
+                      <tr>
+                        <td>Handshake</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="blocks blocks--vertical mr-50">
+              <div class="block">
+                <div class="block__header">
+                  <h2>invoice details</h2>
+                </div>
+                <div class="block__body">
+                  <table class="mini-table">
+                    <tbody>
+                      <tr>
+                        <td>Goods/Services:</td>
+                      </tr>
+                      <tr>
+                        <td>Invoice Date:</td>
+                      </tr>
+                      <tr>
+                        <td>Invoice Amount:</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="buttons buttons--horizontal buttons--align-right">
+                    <a class="button button--medium button--gray">View Invoice</a>
+                  </div>
+                </div>
+              </div>
+              <div class="block">
+                <div class="block__header">
+                  <h2>invoice finance</h2>
+                </div>
+                <div class="block__body">
+                  <table class="mini-table">
+                    <tbody>
+                      <tr>
+                        <td>Provider:</td>
+                      </tr>
+                      <tr>
+                        <td>Invoice Finance Fee:</td>
+                      </tr>
+                      <tr>
+                        <td>Commission charged:</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="buttons buttons--horizontal buttons--align-right">
+                    <a class="button button--medium button--gray">Accept Finance</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blocks blocks--vertical">
+              <div class="block">
+                <div class="block__header">
+                  <h2>insurance</h2>
+                </div>
+                <div class="block__body">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <span class="powered-by">powered by</span>
+          <img src="../img/logo.png" />
+        </footer>
+    </body>
+</html>

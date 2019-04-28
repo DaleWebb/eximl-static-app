@@ -20,14 +20,16 @@ document.addEventListener('DOMContentLoaded', function(event) {
     document.body.classList.add('sidebar--animated');
   }
 
-  sidebarTrigger.addEventListener('click', function collapseExpandSidebar() {
-    var classList = document.body.classList;
-    if(classList.contains('sidebar--collapsed')) {
-      expandSidebar();
-    } else {
-      collapseSidebar();
-    }
-  });
+  if(sidebarTrigger) {
+    sidebarTrigger.addEventListener('click', function collapseExpandSidebar() {
+      var classList = document.body.classList;
+      if(classList.contains('sidebar--collapsed')) {
+        expandSidebar();
+      } else {
+        collapseSidebar();
+      }
+    });
+  }
 
   if(sidebarCollapsed === 'true') {
     collapseSidebar();

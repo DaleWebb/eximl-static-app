@@ -2,6 +2,7 @@
   position: fixed;
   display: inline-flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 102px;
   padding: 20px;
@@ -10,11 +11,21 @@
   &__logo {
     display: flex;
     align-items: center;
-    width: 195px;
+    width: $header-logo-width;
+    height: 100%;
     border-right: 1px solid $gray;
 
     img {
       height: 30px;
+    }
+  }
+
+  &__title {
+    width: calc(100% - #{$header-logo-width});
+    text-align: center;
+
+    h1 {
+      margin-right: $header-logo-width;
     }
   }
 }
@@ -43,6 +54,11 @@
 
     &:active {
       background-color: $sidebar-link-background-colour-clicked;
+    }
+
+    &--disabled {
+      pointer-events: none;
+      opacity: .5;
     }
   }
 }

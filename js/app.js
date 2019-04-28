@@ -1,5 +1,18 @@
 
 document.addEventListener('DOMContentLoaded', function(event) {
+  var companyDetailsSection = document.getElementById('company-details');
+  var lookupButton = document.getElementById('lookup-button');
+
+  function showCompanyDetailsSection() {
+    companyDetailsSection.style.display = 'block';
+  }
+
+  if(lookupButton) {
+    lookupButton.addEventListener('click', showCompanyDetailsSection);
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function(event) {
   var sidebarCollapsed = localStorage.getItem('sidebarCollapsed');
   var sidebarTrigger = document.getElementById('sidebar-trigger');
 
@@ -21,14 +34,16 @@ document.addEventListener('DOMContentLoaded', function(event) {
     document.body.classList.add('sidebar--animated');
   }
 
-  sidebarTrigger.addEventListener('click', function collapseExpandSidebar() {
-    var classList = document.body.classList;
-    if(classList.contains('sidebar--collapsed')) {
-      expandSidebar();
-    } else {
-      collapseSidebar();
-    }
-  });
+  if(sidebarTrigger) {
+    sidebarTrigger.addEventListener('click', function collapseExpandSidebar() {
+      var classList = document.body.classList;
+      if(classList.contains('sidebar--collapsed')) {
+        expandSidebar();
+      } else {
+        collapseSidebar();
+      }
+    });
+  }
 
   if(sidebarCollapsed === 'true') {
     collapseSidebar();
