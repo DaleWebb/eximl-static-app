@@ -1,0 +1,35 @@
+.modal-overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, .75);
+  z-index: 1;
+
+  &--show {
+    display: flex;
+  }
+}
+
+.modal {
+  border: 1px solid $gray;
+  border-radius: 5px;
+  padding: 50px;
+  background: $white;
+
+  &__header {
+    margin-bottom: 25px;
+
+    & > * {
+      margin: 0;
+    }
+  }
+
+  &__body {
+    margin-bottom: 50px;
+  }
+}
