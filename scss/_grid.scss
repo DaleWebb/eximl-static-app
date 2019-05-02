@@ -1,6 +1,7 @@
 .row {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
   &--centre-columns {
     justify-content: center;
@@ -14,6 +15,50 @@
   &--fill {
     flex: 1;
   }
+
+  @for $i from 1 through 12 {
+
+    $width: (100 / 12) * $i;
+
+    @media (min-width: $sm-res) {
+      &-sm-#{$i} {
+        flex-basis: #{$width + '%'};
+      }
+    }
+  }
+
+  @for $i from 1 through 12 {
+
+    $width: (100 / 12) * $i;
+
+    @media (min-width: $md-res) {
+      &-md-#{$i} {
+        flex-basis: #{$width + '%'};
+      }
+    }
+  }
+
+  @for $i from 1 through 12 {
+
+    $width: (100 / 12) * $i;
+
+    @media (min-width: $lg-res) {
+      &-lg-#{$i} {
+        flex-basis: #{$width + '%'};
+      }
+    }
+  }
+
+  @for $i from 1 through 12 {
+
+    $width: (100 / 12) * $i;
+
+    @media (min-width: $xl-res) {
+      &-xl-#{$i} {
+        flex-basis: #{$width + '%'};
+      }
+    }
+  }
 }
 
 .space-between {
@@ -24,42 +69,16 @@
   align-items: center;
 }
 
-.mr-10 {
-  margin-right: 10px;
-}
+@for $i from 1 through 10 {
+  .mr-#{$i}0 {
+    margin-right: #{$i}0px;
+  }
 
-.mr-20 {
-  margin-right: 20px;
-}
+  .mb-#{$i}0 {
+    margin-bottom: #{$i}0px;
+  }
 
-.mr-50 {
-  margin-right: 50px;
-}
-
-.mr-100 {
-  margin-right: 100px;
-}
-
-.mb-10 {
-  margin-bottom: 10px;
-}
-
-.mb-20 {
-  margin-bottom: 20px;
-}
-
-.mb-50 {
-  margin-bottom: 50px;
-}
-
-.m-10 {
-  margin: 10px;
-}
-
-.m-20 {
-  margin: 20px;
-}
-
-.m-50 {
-  margin: 50px;
+  .m-#{$i}0 {
+    margin: #{$i}0px;
+  }
 }

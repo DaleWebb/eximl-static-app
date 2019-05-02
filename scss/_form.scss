@@ -38,6 +38,10 @@
   &:not(textarea):not(select[multiple]) {
     height: 35px;
   }
+
+  &--inline {
+    width: auto;
+  }
 }
 
 select[multiple].input-field {
