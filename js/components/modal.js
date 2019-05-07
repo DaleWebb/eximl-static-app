@@ -1,4 +1,4 @@
-window.modalCallbacks = [];
+window.modalCallbacks = {};
 
 document.addEventListener('DOMContentLoaded', function(event) {
 

@@ -1,8 +1,8 @@
 .mini-table {
-  width: calc(100% + 15px);
-  margin: -7.5px;
-  border-collapse: separate;
-  border-spacing: 7.5px;
+
+  &--full-width {
+    width: 100%;
+  }
 
   tr {
     height: 26px;
@@ -42,10 +42,6 @@
 
     tbody tr {
       height: 35px;
-    }
-
-    td {
-      text-align: center;
     }
   }
 
@@ -146,5 +142,13 @@
 
   .button {
     display: block;
+  }
+
+  .text-align-top {
+    vertical-align: top;
+  }
+
+  .border-top {
+    border-top: 1px solid $gray;
   }
 }

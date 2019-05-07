@@ -18,8 +18,8 @@
           <div class="quick-links">
             <a class="quick-links__button">Invite</a>
             <a class="quick-links__button">Reports</a>
-            <a class="quick-links__button">Insurance</a>
-            <a class="quick-links__button">Finance</a>
+            <a class="quick-links__button quick-links__button--disabled">Insurance</a>
+            <a class="quick-links__button quick-links__button--disabled">Finance</a>
             <a class="quick-links__button">Membership</a>
             <a class="quick-links__button">Tokens</a>
           </div>
@@ -41,7 +41,7 @@
         </header>
         <div class="sidebar">
           <div class="sidebar-links">
-            <a class="sidebar-link" href="index.html">
+            <a class="sidebar-link sidebar-link--active" href="unverified.html">
               <span class="sidebar-link__icon">
                 <i class="fa fa-tachometer-alt"></i>
               </span>
@@ -59,7 +59,7 @@
               </span>
               <span class="sidebar-link__text">Invitations</span>
             </a>
-            <a class="sidebar-link sidebar-link--active" href="trades.html">
+            <a class="sidebar-link sidebar-link--disabled" href="trades.html">
               <span class="sidebar-link__icon">
                 <i class="fa fa-handshake"></i>
               </span>
@@ -93,85 +93,15 @@
             <div class="breadcrumb">
               Dashboard
             </div>
-            <div class="breadcrumb">
-              Trading
-            </div>
-            <div class="breadcrumb">
-              New Transaction
-            </div>
           </div>
           <div class="page__header">
-            <h1>New Transaction</h1>
+            <h1>Profiles</h1>
           </div>
-          <div class="row">
-            <div class="column">
-              <table class="table table--vertical">
-                <tbody>
-                  <tr>
-                    <td>
-                      <div class="required">Are you the buyer or the seller?</div>
-                    </td>
-                    <td>
-                      <div class="input-fields input-fields--horizontal">
-                        <label><input type="radio" name="role" value="buyer" /> Buyer</label>
-                        <label><input type="radio" name="role" value="seller" /> Seller</label>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="required">Who is the buyer?</div>
-                      <div class="input-field-help-text">(Start typing the buyer’s company name to find them).</div>
-                    </td>
-                    <td>
-                      <input type="text" class="input-field" />
-                      <div class="input-field-help-text">
-                        If the buyer is not yet a member of the platform, <a>send them an invitation to join.</a>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="required">Describe goods/services</div>
-                    </td>
-                    <td>
-                      <textarea class="input-field" rows="10"></textarea>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="required">What is the total invoice amount?</div>
-                    </td>
-                    <td>
-                      <div class="input-fields input-fields--horizontal">
-                        <select class="input-field">
-                          <option selected>GBP</option>
-                        </select>
-                        <input type="number" class="input-field" min="0" />
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="required">What is the credit period required (in days)</div>
-                    </td>
-                    <td>
-                      <input type="number" class="input-field" min="1" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td>
-                      <div class="buttons buttons--horizontal">
-                        <a class="button button--medium button--gray">Cancel</a>
-                        <a class="button button--medium button--blue" href="trading-new-2.html">Submit</a>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+          <div class="info-block">
+            <h4>Profile Completion</h4>
+            <div class="buttons buttons--horizontal">
+              <a class="button button--medium" href="settings-my-profile.html">Go to Settings</a>
             </div>
-            <div class="column"></div>
           </div>
         </div>
         <footer class="footer">

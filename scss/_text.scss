@@ -14,3 +14,23 @@ a {
 .centre-text {
   text-align: center;
 }
+
+.left-text {
+  text-align: left;
+}
+
+.right-text {
+  text-align: right;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.red-text {
+  color: $red;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}

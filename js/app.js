@@ -1,5 +1,5 @@
 
-window.modalCallbacks = [];
+window.modalCallbacks = {};
 
 document.addEventListener('DOMContentLoaded', function(event) {
 
@@ -87,43 +87,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
         }
       });
     });
-  }
-
-  window.modalCallbacks['confirmation-modal'] = {
-    beforeShow: function() {
-      var selectedLenders = document.getElementById('selected-lenders').options;
-      var selectedLendersNames = [];
-      var selectedLendersWithinModal = document.getElementById('list-of-selected-lenders');
-
-      while(selectedLendersWithinModal.lastChild) {
-        selectedLendersWithinModal.removeChild(selectedLendersWithinModal.lastChild);
-      }
-
-      for(var i = 0; i < selectedLenders.length; i++) {
-        selectedLendersNames.push(selectedLenders[i].innerText);
-      }
-
-      selectedLendersNames.forEach(function(selectedLenderName) {
-        var lenderNameElement = document.createElement('div');
-        var lenderNameElementInner = document.createElement('p');
-        lenderNameElementInner.innerText = selectedLenderName;
-        lenderNameElement.appendChild(lenderNameElementInner);
-        selectedLendersWithinModal.appendChild(lenderNameElement);
-      });
-    }
-  };
-
-  window.lenderSelectorCallbacks['selected-lenders'] = {};
-  window.lenderSelectorCallbacks['lenders'] = {};
-  window.lenderSelectorCallbacks['selected-lenders'].onMoveTo = window.lenderSelectorCallbacks['lenders'].onMoveTo = function() {
-    var selectedLenders = document.getElementById('selected-lenders').options;
-    var confirmationModalTrigger = document.getElementById('confirmation-modal-trigger');
-
-    if(selectedLenders.length > 0) {
-      confirmationModalTrigger.classList.remove('button--disabled');
-    } else {
-      confirmationModalTrigger.classList.add('button--disabled');
-    }
   }
 });
 

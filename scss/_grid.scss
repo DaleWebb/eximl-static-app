@@ -3,8 +3,16 @@
   flex-direction: row;
   flex-wrap: wrap;
 
+  &--no-wrap {
+    flex-wrap: nowrap;
+  }
+
   &--centre-columns {
     justify-content: center;
+  }
+
+  &--space-between {
+    justify-content: space-between;
   }
 }
 
@@ -14,6 +22,10 @@
 
   &--fill {
     flex: 1;
+  }
+
+  &--space-between {
+    justify-content: space-between;
   }
 
   @for $i from 1 through 12 {
@@ -65,13 +77,25 @@
   justify-content: space-between;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .align-center {
   align-items: center;
 }
 
 @for $i from 1 through 10 {
+  .ml-#{$i}0 {
+    margin-left: #{$i}0px;
+  }
+
   .mr-#{$i}0 {
     margin-right: #{$i}0px;
+  }
+
+  .mt-#{$i}0 {
+    margin-top: #{$i}0px;
   }
 
   .mb-#{$i}0 {
@@ -80,5 +104,25 @@
 
   .m-#{$i}0 {
     margin: #{$i}0px;
+  }
+
+  .pdl-#{$i}0 {
+    padding-left: #{$i}0px;
+  }
+
+  .pdr-#{$i}0 {
+    padding-right: #{$i}0px;
+  }
+
+  .pdt-#{$i}0 {
+    padding-top: #{$i}0px;
+  }
+
+  .pdb-#{$i}0 {
+    padding-bottom: #{$i}0px;
+  }
+
+  .pd-#{$i}0 {
+    padding: #{$i}0px;
   }
 }
