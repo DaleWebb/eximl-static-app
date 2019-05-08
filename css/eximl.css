@@ -835,22 +835,22 @@ a {
       -ms-flex-align: center;
           align-items: center; }
 
-.justify-left {
+.justify-left, .justify-start {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start; }
 
-.align-left {
+.align-left, .align-start {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start; }
 
-.justify-right {
+.justify-right, .justify-bottom {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
-.align-right {
+.align-right, .align-bottom {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end; }
@@ -1188,6 +1188,59 @@ a {
 .wdh-min {
   width: 1%;
   white-space: nowrap; }
+
+.bd {
+  border: 1px solid #707070; }
+  .bd-d {
+    border-style: double; }
+  .bdt {
+    border-top: 1px solid #707070; }
+    .bdt-1 {
+      border-top: 1px solid #707070; }
+    .bdt-2 {
+      border-top: 2px solid #707070; }
+    .bdt-5 {
+      border-top: 5px solid #707070; }
+    .bdt-10 {
+      border-top: 10px solid #707070; }
+    .bdt-d {
+      border-top-style: double; }
+  .bdb {
+    border-bottom: 1px solid #707070; }
+    .bdb-1 {
+      border-bottom: 1px solid #707070; }
+    .bdb-2 {
+      border-bottom: 2px solid #707070; }
+    .bdb-5 {
+      border-bottom: 5px solid #707070; }
+    .bdb-10 {
+      border-bottom: 10px solid #707070; }
+    .bdb-d {
+      border-bottom-style: double; }
+  .bdl {
+    border-left: 1px solid #707070; }
+    .bdl-1 {
+      border-left: 1px solid #707070; }
+    .bdl-2 {
+      border-left: 2px solid #707070; }
+    .bdl-5 {
+      border-left: 5px solid #707070; }
+    .bdl-10 {
+      border-left: 10px solid #707070; }
+    .bdl-d {
+      border-left-style: double; }
+  .bdr {
+    border-right: 1px solid #707070; }
+    .bdr-1 {
+      border-right: 1px solid #707070; }
+    .bdr-2 {
+      border-right: 2px solid #707070; }
+    .bdr-5 {
+      border-right: 5px solid #707070; }
+    .bdr-10 {
+      border-right: 10px solid #707070; }
+    .bdr-d {
+      border-right-style: double; }
 
 .tabs {
   display: -webkit-inline-box;

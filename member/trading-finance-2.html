@@ -9,6 +9,43 @@
         <link rel="stylesheet" href="../css/eximl.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <script src="../js/app.js"></script>
+        <script type="text/javascript">
+          window.modalCallbacks['confirmation-modal'] = {
+            beforeShow: function() {
+              var selectedLenders = document.getElementById('selected-lenders').options;
+              var selectedLendersNames = [];
+              var selectedLendersWithinModal = document.getElementById('list-of-selected-lenders');
+
+              while(selectedLendersWithinModal.lastChild) {
+                selectedLendersWithinModal.removeChild(selectedLendersWithinModal.lastChild);
+              }
+
+              for(var i = 0; i < selectedLenders.length; i++) {
+                selectedLendersNames.push(selectedLenders[i].innerText);
+              }
+
+              selectedLendersNames.forEach(function(selectedLenderName) {
+                var lenderNameElement = document.createElement('div');
+                var lenderNameElementInner = document.createElement('p');
+                lenderNameElementInner.innerText = selectedLenderName;
+                lenderNameElement.appendChild(lenderNameElementInner);
+                selectedLendersWithinModal.appendChild(lenderNameElement);
+              });
+            }
+          };
+          window.lenderSelectorCallbacks['selected-lenders'] = {};
+          window.lenderSelectorCallbacks['lenders'] = {};
+          window.lenderSelectorCallbacks['selected-lenders'].onMoveTo = window.lenderSelectorCallbacks['lenders'].onMoveTo = function() {
+            var selectedLenders = document.getElementById('selected-lenders').options;
+            var confirmationModalTrigger = document.getElementById('confirmation-modal-trigger');
+
+            if(selectedLenders.length > 0) {
+              confirmationModalTrigger.classList.remove('button--disabled');
+            } else {
+              confirmationModalTrigger.classList.add('button--disabled');
+            }
+          }
+        </script>
     </head>
     <body>
         <header class="header">
@@ -16,10 +53,10 @@
             <img src="../img/365.png" />
           </div>
           <div class="quick-links">
-            <a class="quick-links__button">Invite</a>
+            <a class="quick-links__button" href="invitations.html">Invite</a>
             <a class="quick-links__button">Reports</a>
             <a class="quick-links__button">Insurance</a>
-            <a class="quick-links__button quick-links_button--disabled">Finance</a>
+            <a class="quick-links__button quick-links__button--disabled">Finance</a>
             <a class="quick-links__button">Membership</a>
             <a class="quick-links__button">Tokens</a>
           </div>
@@ -201,7 +238,7 @@
             </div>
             <div class="column">
               <div class="buttons buttons--horizontal">
-                <a class="button button--medium button--gray">Cancel</a>
+                <a class="button button--medium button--gray" href="trading-finance.html">Cancel</a>
                 <a class="button button--medium button--disabled modal-trigger" id="confirmation-modal-trigger" data-modal="confirmation-modal">Submit</a>
               </div>
             </div>
@@ -236,42 +273,5 @@
             </div>
           </div>
         </div>
-        <script type="text/javascript">
-          window.modalCallbacks['confirmation-modal'] = {
-            beforeShow: function() {
-              var selectedLenders = document.getElementById('selected-lenders').options;
-              var selectedLendersNames = [];
-              var selectedLendersWithinModal = document.getElementById('list-of-selected-lenders');
-
-              while(selectedLendersWithinModal.lastChild) {
-                selectedLendersWithinModal.removeChild(selectedLendersWithinModal.lastChild);
-              }
-
-              for(var i = 0; i < selectedLenders.length; i++) {
-                selectedLendersNames.push(selectedLenders[i].innerText);
-              }
-
-              selectedLendersNames.forEach(function(selectedLenderName) {
-                var lenderNameElement = document.createElement('div');
-                var lenderNameElementInner = document.createElement('p');
-                lenderNameElementInner.innerText = selectedLenderName;
-                lenderNameElement.appendChild(lenderNameElementInner);
-                selectedLendersWithinModal.appendChild(lenderNameElement);
-              });
-            }
-          };
-          window.lenderSelectorCallbacks['selected-lenders'] = {};
-          window.lenderSelectorCallbacks['lenders'] = {};
-          window.lenderSelectorCallbacks['selected-lenders'].onMoveTo = window.lenderSelectorCallbacks['lenders'].onMoveTo = function() {
-            var selectedLenders = document.getElementById('selected-lenders').options;
-            var confirmationModalTrigger = document.getElementById('confirmation-modal-trigger');
-
-            if(selectedLenders.length > 0) {
-              confirmationModalTrigger.classList.remove('button--disabled');
-            } else {
-              confirmationModalTrigger.classList.add('button--disabled');
-            }
-          }
-        </script>
     </body>
 </html>

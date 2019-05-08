@@ -1,0 +1,363 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../css/eximl.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="../js/app.js"></script>
+    </head>
+    <body>
+        <header class="header">
+          <div class="header__logo">
+            <img src="../img/365.png" />
+          </div>
+          <div class="quick-links">
+            <a class="quick-links__button" href="invitations.html">Invite</a>
+            <a class="quick-links__button">Reports</a>
+            <a class="quick-links__button">Insurance</a>
+            <a class="quick-links__button quick-links__button--disabled">Finance</a>
+            <a class="quick-links__button">Membership</a>
+            <a class="quick-links__button">Tokens</a>
+          </div>
+          <div class="user-actions">
+            <div class="user-actions__item">
+              <i class="fas fa-bell fa-2x mr-10"></i>
+              <span class="notification">5</span>
+              <span>Notifications</span>
+            </div>
+            <div class="user-actions__item">
+              <i class="fas fa-user fa-2x mr-10"></i>
+              <span>Sarah Potter</span>
+            </div>
+            <a class="user-actions__item" href="../auth/login.html">
+              <i class="fas fa-sign-out-alt fa-2x mr-10"></i>
+              <span>Logout</span>
+            </a>
+          </div>
+        </header>
+        <div class="sidebar">
+          <div class="sidebar-links">
+            <a class="sidebar-link" href="index.html">
+              <span class="sidebar-link__icon">
+                <i class="fa fa-tachometer-alt"></i>
+              </span>
+              <span class="sidebar-link__text">Dashboard</span>
+            </a>
+            <a class="sidebar-link" href="members.html">
+              <span class="sidebar-link__icon">
+                <i class="fa fa-users"></i>
+              </span>
+              <span class="sidebar-link__text">Members</span>
+            </a>
+            <a class="sidebar-link" href="invitations.html">
+              <span class="sidebar-link__icon">
+                <i class="fa fa-share-alt"></i>
+              </span>
+              <span class="sidebar-link__text">Invitations</span>
+            </a>
+            <a class="sidebar-link sidebar-link--active" href="trades.html">
+              <span class="sidebar-link__icon">
+                <i class="fa fa-handshake"></i>
+              </span>
+              <span class="sidebar-link__text">Trading</span>
+            </a>
+            <a class="sidebar-link" href="documents.html">
+              <span class="sidebar-link__icon">
+                <i class="fa fa-folder-open"></i>
+              </span>
+              <span class="sidebar-link__text">Documents</span>
+            </a>
+            <a class="sidebar-link" href="purchases.html">
+              <span class="sidebar-link__icon">
+                <i class="fa fa-wallet"></i>
+              </span>
+              <span class="sidebar-link__text">Purchases</span>
+            </a>
+            <a class="sidebar-link" href="settings-my-profile.html">
+              <span class="sidebar-link__icon">
+                <i class="fa fa-cog"></i>
+              </span>
+              <span class="sidebar-link__text">Settings</span>
+            </a>
+          </div>
+          <a id="sidebar-trigger">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <div class="page">
+          <div class="breadcrumbs">
+            <div class="breadcrumb">
+              Dashboard
+            </div>
+            <div class="breadcrumb">
+              Trading
+            </div>
+            <div class="breadcrumb">
+              New Transaction
+            </div>
+          </div>
+          <div class="page__header">
+            <h1>Trading - Finance</h1>
+          </div>
+          <div class="row pdb-40 bdb-5">
+            <div class="column mr-50">
+              <div class="row">
+                <div class="column mr-10">
+                  <div>
+                    Start typing buyer name
+                  </div>
+                  <input type="text" class="input-field" name="" value="" placeholder="buyer name...">
+                </div>
+                <div class="column justify-bottom">
+                  <a class="button button--medium">
+                    <i class="fas fa-search pdr-10"></i>
+                    Search Invoices
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="pd-10 bd" style="height: 160px; overflow: auto;">
+                <table class="table table--full-width table--horizontal">
+                  <thead>
+                    <tr>
+                      <th>Invoice No.</th>
+                      <th>Date</th>
+                      <th>Amount</th>
+                      <th>Buyer</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="centre-text pdl-10 pdr-20">FP1234098</td>
+                      <td class="centre-text pdl-10 pdr-20">13 Feb 2019</td>
+                      <td class="centre-text pdl-10 pdr-20">125,000</td>
+                      <td class="centre-text pdl-10 pdr-20">Fantastic Plastic</td>
+                      <td>
+                        <div class="buttons buttons--horizontal buttons--align-center">
+                          <a class="button button--small">View</a>
+                          <a class="button button--small">Add</a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="centre-text pdl-10 pdr-20">FP1234098</td>
+                      <td class="centre-text pdl-10 pdr-20">13 Feb 2019</td>
+                      <td class="centre-text pdl-10 pdr-20">125,000</td>
+                      <td class="centre-text pdl-10 pdr-20">Fantastic Plastic</td>
+                      <td>
+                        <div class="buttons buttons--horizontal buttons--align-center">
+                          <a class="button button--small">View</a>
+                          <a class="button button--small">Add</a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="centre-text pdl-10 pdr-20">FP1234098</td>
+                      <td class="centre-text pdl-10 pdr-20">13 Feb 2019</td>
+                      <td class="centre-text pdl-10 pdr-20">125,000</td>
+                      <td class="centre-text pdl-10 pdr-20">Fantastic Plastic</td>
+                      <td>
+                        <div class="buttons buttons--horizontal buttons--align-center">
+                          <a class="button button--small">View</a>
+                          <a class="button button--small">Add</a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="centre-text pdl-10 pdr-20">FP1234098</td>
+                      <td class="centre-text pdl-10 pdr-20">13 Feb 2019</td>
+                      <td class="centre-text pdl-10 pdr-20">125,000</td>
+                      <td class="centre-text pdl-10 pdr-20">Fantastic Plastic</td>
+                      <td>
+                        <div class="buttons buttons--horizontal buttons--align-center">
+                          <a class="button button--small">View</a>
+                          <a class="button button--small">Add</a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-20" >
+            <div class="column">
+              <h2>The following invoices will be submitted to the finance company</h2>
+            </div>
+          </div>
+          <div class="row mb-50">
+            <div class="column column--fill mr-50">
+              <table class="table table--horizontal table--full-width mb-20">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Trade ID</th>
+                    <th>Invoice No.</th>
+                    <th>Currency</th>
+                    <th>Invoice Amount</th>
+                    <th>Date Created</th>
+                    <th>Buyer</th>
+                    <th>Seller</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" checked/></td>
+                    <td class="centre-text"><a>1051</a></td>
+                    <td class="centre-text">FP1234098</td>
+                    <td class="centre-text">GBP</td>
+                    <td class="centre-text">125,000</td>
+                    <td class="centre-text">13 Feb 2019</td>
+                    <td class="centre-text">Fantastic Plastic</td>
+                    <td class="centre-text">Venus Ltd</td>
+                    <td>
+                      <div class="buttons buttons--horizontal buttons--align-center">
+                        <a class="button button--small">View Invoice</a>
+                        <a class="button button--small button--negative">Remove</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" checked/></td>
+                    <td class="centre-text"><a>1051</a></td>
+                    <td class="centre-text">FP1234098</td>
+                    <td class="centre-text">GBP</td>
+                    <td class="centre-text">125,000</td>
+                    <td class="centre-text">13 Feb 2019</td>
+                    <td class="centre-text">Fantastic Plastic</td>
+                    <td class="centre-text">Venus Ltd</td>
+                    <td>
+                      <div class="buttons buttons--horizontal buttons--align-center">
+                        <a class="button button--small">View Invoice</a>
+                        <a class="button button--small button--negative">Remove</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" checked/></td>
+                    <td class="centre-text"><a>1051</a></td>
+                    <td class="centre-text">FP1234098</td>
+                    <td class="centre-text">GBP</td>
+                    <td class="centre-text">125,000</td>
+                    <td class="centre-text">13 Feb 2019</td>
+                    <td class="centre-text">Fantastic Plastic</td>
+                    <td class="centre-text">Venus Ltd</td>
+                    <td>
+                      <div class="buttons buttons--horizontal buttons--align-center">
+                        <a class="button button--small">View Invoice</a>
+                        <a class="button button--small button--negative">Remove</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" checked/></td>
+                    <td class="centre-text"><a>1051</a></td>
+                    <td class="centre-text">FP1234098</td>
+                    <td class="centre-text">GBP</td>
+                    <td class="centre-text">125,000</td>
+                    <td class="centre-text">13 Feb 2019</td>
+                    <td class="centre-text">Fantastic Plastic</td>
+                    <td class="centre-text">Venus Ltd</td>
+                    <td>
+                      <div class="buttons buttons--horizontal buttons--align-center">
+                        <a class="button button--small">View Invoice</a>
+                        <a class="button button--small button--negative">Remove</a>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" checked/></td>
+                    <td class="centre-text"><a>1051</a></td>
+                    <td class="centre-text">FP1234098</td>
+                    <td class="centre-text">GBP</td>
+                    <td class="centre-text">125,000</td>
+                    <td class="centre-text">13 Feb 2019</td>
+                    <td class="centre-text">Fantastic Plastic</td>
+                    <td class="centre-text">Venus Ltd</td>
+                    <td>
+                      <div class="buttons buttons--horizontal buttons--align-center">
+                        <a class="button button--small">View Invoice</a>
+                        <a class="button button--small button--negative">Remove</a>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="right-text">Total</td>
+                    <td class="bdt-d pd-10 centre-text">625,000</td>
+                  </tr>
+                </tfoot>
+              </table>
+              <div class="row space-between">
+                <div class="column">
+                  <div class="mb-20">5 selected</div>
+                </div>
+              </div>
+            </div>
+            <div class="column bdl pdl-50">
+              <table>
+                <thead>
+                  <th colspan="2">Invoice Finance Illustration</th>
+                </thead>
+                <thead>
+                  <th>Invoice Days</th>
+                  <th>Net Cash Release</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="centre-text pd-10">30</td>
+                    <td class="centre-text pd-10">119,525</td>
+                  </tr>
+                  <tr>
+                    <td class="centre-text pd-10">30</td>
+                    <td class="centre-text pd-10">119,525</td>
+                  </tr>
+                  <tr>
+                    <td class="centre-text pd-10">30</td>
+                    <td class="centre-text pd-10">119,525</td>
+                  </tr>
+                  <tr>
+                    <td class="centre-text pd-10">30</td>
+                    <td class="centre-text pd-10">119,525</td>
+                  </tr>
+                  <tr>
+                    <td class="centre-text pd-10">30</td>
+                    <td class="centre-text pd-10">119,525</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td class="right-text">Total</td>
+                    <td class="pd-10 bdt-d centre-text">597,625</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <div class="row space-between">
+            <div class="column"></div>
+            <div class="column">
+              <div class="buttons buttons--horizontal">
+                <a class="button button--medium button--gray" href="finance.html">Cancel</a>
+                <a class="button button--medium" href="trading-finance-2.html">Submit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <span class="powered-by">powered by</span>
+          <img src="../img/logo.png" />
+        </footer>
+    </body>
+</html>

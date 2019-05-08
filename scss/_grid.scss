@@ -85,19 +85,19 @@
   align-items: center;
 }
 
-.justify-left {
+.justify-left, .justify-start {
   justify-content: flex-start;
 }
 
-.align-left {
+.align-left, .align-start {
   align-items: flex-start;
 }
 
-.justify-right {
+.justify-right, .justify-bottom {
   justify-content: flex-end;
 }
 
-.align-right {
+.align-right, .align-bottom {
   align-items: flex-end;
 }
 
@@ -150,4 +150,108 @@
 .wdh-min {
   width: 1%;
   white-space: nowrap;
+}
+
+.bd {
+  border: 1px solid $gray;
+
+  &-d {
+    border-style: double;
+  }
+
+  &t {
+    border-top: 1px solid $gray;
+
+    &-1 {
+      border-top: 1px solid $gray;
+    }
+
+    &-2 {
+      border-top: 2px solid $gray;
+    }
+
+    &-5 {
+      border-top: 5px solid $gray;
+    }
+
+    &-10 {
+      border-top: 10px solid $gray;
+    }
+
+    &-d {
+      border-top-style: double;
+    }
+  }
+
+  &b {
+    border-bottom: 1px solid $gray;
+
+    &-1 {
+      border-bottom: 1px solid $gray;
+    }
+
+    &-2 {
+      border-bottom: 2px solid $gray;
+    }
+
+    &-5 {
+      border-bottom: 5px solid $gray;
+    }
+
+    &-10 {
+      border-bottom: 10px solid $gray;
+    }
+
+    &-d {
+      border-bottom-style: double;
+    }
+  }
+
+  &l {
+    border-left: 1px solid $gray;
+
+    &-1 {
+      border-left: 1px solid $gray;
+    }
+
+    &-2 {
+      border-left: 2px solid $gray;
+    }
+
+    &-5 {
+      border-left: 5px solid $gray;
+    }
+
+    &-10 {
+      border-left: 10px solid $gray;
+    }
+
+    &-d {
+      border-left-style: double;
+    }
+  }
+
+  &r {
+    border-right: 1px solid $gray;
+
+    &-1 {
+      border-right: 1px solid $gray;
+    }
+
+    &-2 {
+      border-right: 2px solid $gray;
+    }
+
+    &-5 {
+      border-right: 5px solid $gray;
+    }
+
+    &-10 {
+      border-right: 10px solid $gray;
+    }
+
+    &-d {
+      border-right-style: double;
+    }
+  }
 }
